@@ -246,3 +246,9 @@ span.scale-rating label:before {
     vertical-align: middle;
     z-index: 2;
 }
+
+.mg {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+}

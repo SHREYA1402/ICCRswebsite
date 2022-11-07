@@ -76,7 +76,7 @@ h1{
     border: 3px solid;
     border-color: brown;
     width: 500px;
-    padding-left: 2%;
+    padding-left: 1%;
     position: relative;
     left: 63%;
 }
@@ -109,7 +109,7 @@ h1{
     margin: 0 auto;
     margin-top: 50px;
     margin-left: 50px;
-    background-color: aquamarine;
+    background-color: rgb(152, 157, 211);
     border-radius: 20%;
     float: left;
   }
@@ -121,9 +121,10 @@ h1{
     margin: 0 auto;
     margin-top: 50px;
     margin-left: 50px;
-    background-color: aquamarine;
+    background-color:  rgb(152, 157, 211);
     border-radius: 20%;
     float: right;
+    margin-right: 5%;
   }
 
   .img {
@@ -143,6 +144,7 @@ h1{
 h2 {
     text-align: center;
     font-size: 30px;
+    
 }
 
 .img2 {
@@ -166,4 +168,20 @@ h2 {
     clip-path: circle();
     margin-top: 25px;
     margin-left: 45px;
+  }
+
+  .p1{
+    font-size: 23px;
+    font-family: 'Times New Roman', Times, serif;
+    inline-size: 85%;
+    margin: 5%;
+    line-height: 1.5;
+  }
+
+  .p2{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    inline-size: 85%;
+    margin: 5%;
+    line-height: 1.5;
   }

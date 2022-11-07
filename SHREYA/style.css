@@ -252,3 +252,14 @@ span.scale-rating label:before {
     width: 40%;
     float: right;
 }
+
+#main1{
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+
+img{
+    height: 500px;
+    width: 100%;
+}

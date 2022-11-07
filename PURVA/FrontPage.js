@@ -7,9 +7,9 @@ import { faperson } from '@fortawesome/free-solid-svg-icons'
 import { useEffect } from 'react';
 import { useState } from 'react';
 ////////
-import {FiAlignRight,FiXCircle,FiChevronDown } from "react-icons/fi";
-import {NavLink, Link } from "react-router-dom";
-import Dropdown from './Dropdown';
+// import {FiAlignRight,FiXCircle,FiChevronDown } from "react-icons/fi";
+// import {NavLink, Link } from "react-router-dom";
+// import Dropdown from './Dropdown';
 ////////
 import iccr from './iccr.jpg';
 import iccr_logo from './iccr_logo.png';
@@ -35,28 +35,28 @@ export default function FrontPage () {
 
 
 // //////////
-   const [isMenu, setisMenu] = useState(false);
-   const [isResponsiveclose, setResponsiveclose] = useState(false);
-   const toggleClass = () => {
-     setisMenu(isMenu === false ? true : false);
-     setResponsiveclose(isResponsiveclose === false ? true : false);
- };
-   let boxClass = ["main-menu menu-right menuq1"];
-   if(isMenu) {
-       boxClass.push('menuq2');
-   }else{
-       boxClass.push('');
-   }
-   const [isMenuSubMenu, setMenuSubMenu] = useState(false);
-   const toggleSubmenu = () => {
-     setMenuSubMenu(isMenuSubMenu === false ? true : false);
-   };
-   let boxClassSubMenu = ["sub__menus"];
-   if(isMenuSubMenu) {
-       boxClassSubMenu.push('sub__menus__Active');
-   }else {
-       boxClassSubMenu.push('');
-   }
+//    const [isMenu, setisMenu] = useState(false);
+//    const [isResponsiveclose, setResponsiveclose] = useState(false);
+//    const toggleClass = () => {
+//      setisMenu(isMenu === false ? true : false);
+//      setResponsiveclose(isResponsiveclose === false ? true : false);
+//  };
+//    let boxClass = ["main-menu menu-right menuq1"];
+//    if(isMenu) {
+//        boxClass.push('menuq2');
+//    }else{
+//        boxClass.push('');
+//    }
+//    const [isMenuSubMenu, setMenuSubMenu] = useState(false);
+//    const toggleSubmenu = () => {
+//      setMenuSubMenu(isMenuSubMenu === false ? true : false);
+//    };
+//    let boxClassSubMenu = ["sub__menus"];
+//    if(isMenuSubMenu) {
+//        boxClassSubMenu.push('sub__menus__Active');
+//    }else {
+//        boxClassSubMenu.push('');
+//    }
 
 ///////////
 
@@ -74,7 +74,7 @@ export default function FrontPage () {
             {/* //////////////// */}
 
 
-            {/* <div id="first">
+             <div id="first">
             <div className="nav-links">
             
             <NavLink to='/'>Home</NavLink>
@@ -94,12 +94,12 @@ export default function FrontPage () {
             </div>
             </div>
          </div>
-            */}
+            
 
          {/* /////////////////// */}
-            <div className="header__middle__menus">
+            {/* <div className="header__middle__menus">
                     <nav className="main-nav " >
-                    {/* Responsive Menu Button */}
+                   
                     {isResponsiveclose === true ? <> 
                         <span className="menubar__button" style={{ display: 'none' }} onClick={toggleClass} > <FiXCircle />   </span>
                     </> : <> 
@@ -119,7 +119,7 @@ export default function FrontPage () {
                         <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Contact`}> Contact </NavLink> </li>
                     </ul>
                     </nav>     
-                </div> 
+                </div>  */}
             {/* ////////////////////// */}
 
          

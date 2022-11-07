@@ -99,8 +99,8 @@ export default function FrontPage () {
          {/* /////////////////// */}
             {/* <div className="header__middle__menus">
                     <nav className="main-nav " >
-                   
-                    {isResponsiveclose === true ? <> 
+                    {/* Responsive Menu Button */}
+                    {/* {isResponsiveclose === true ? <> 
                         <span className="menubar__button" style={{ display: 'none' }} onClick={toggleClass} > <FiXCircle />   </span>
                     </> : <> 
                         <span className="menubar__button" style={{ display: 'none' }} onClick={toggleClass} > <FiAlignRight />   </span>
@@ -119,7 +119,7 @@ export default function FrontPage () {
                         <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Contact`}> Contact </NavLink> </li>
                     </ul>
                     </nav>     
-                </div>  */}
+                </div>   */}
             {/* ////////////////////// */}
 
          
@@ -226,7 +226,8 @@ export default function FrontPage () {
    <div class="credit"> created by <span>mr. web designer</span> | all rights reserved! </div>
 
 </section>
-
+{/* <Dropdown/> */}
+        {/* <div class="embed-container"><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="final map" src="//ashwinimap.maps.arcgis.com/apps/Embed/index.html?webmap=bdc025a917b24f6995ce12124290ed38&extent=71.3872,6.2832,82.8789,12.2118&home=true&zoom=true&previewImage=false&scale=true&search=true&searchextent=true&legend=true&disable_scroll=true&theme=light"></iframe></div> */}
       </>
    )
 }

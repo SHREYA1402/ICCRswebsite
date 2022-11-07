@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    padding: 0px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    border: none;
+   
+}
+
+.container {
+    max-width:800px;
+	width: 100%;
+	margin:20px auto;
+    margin-right:33px;
+	padding :30px;
+	box-shadow: 3px 2px 2px 2px grey;   
+}
+input[type=file]{
+       margin-left: 43px;
+}
+#lname{
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none; 
+    padding-left:29px;
+    width: 8cm; 
+  
+}
+#oname{
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none; 
+    padding-left:29px; 
+    width: 8cm;
+    float: right; 
+    
+}
+/* #hname #sname #zname #aname #ename #pname #cpname #phname #acname #oiname{
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none; 
+    margin-left:23px; 
+    float: right; 
+    width:15cm;
+} */
+input[type="text"],input[type="password"]{
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none; 
+    margin-left:23px; 
+    float: right; 
+    width:13cm;
+
+}
+#psw{
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none; 
+    margin-left:23px; 
+    float: right; 
+    width:15cm;
+}
+
+hr {
+    border: 1px solid #1a1818;
+    margin-bottom: 25px;
+}
+
+.registerbtn {
+    background-color: green;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+.signin {
+    background-color: #d9cfcf;
+    text-align: center;
+    padding-bottom: 2cm;  
+
+}
+
+.register-header{
+background-color: white;
+}
+.register-header
+{
+  position: fixed;
+
+}
+/* span{
+   padding:1.5cm;
+   margin-left: 2.3cm;
+   padding-right: 33px;
+} */
+.containersignin{
+        padding-left: 9%;
+       
+        
+}

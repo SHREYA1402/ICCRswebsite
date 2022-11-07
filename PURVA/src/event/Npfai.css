@@ -1,0 +1,77 @@
+.sidenav {
+    margin-top: 160px;
+    height: 100VH;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    background-color: #042331;
+    transition: 0.5s;
+    padding-top: 60px;
+
+}
+
+.sidenav a {
+    padding: 10px;
+    padding-left: 30px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    color: white;
+    transition: 0.4s;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(225, 205, 205, 0.1);
+
+}
+
+.sidenav a:hover {
+    padding-left: 50px;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.icon {
+    font-size: 25px;
+    cursor: pointer;
+    font-weight: 50;
+    margin-left: 13px;
+}
+
+/*  ------------drowpdown------------*/
+
+#ddlCountry {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 20px;
+    padding-right: 11px;
+    margin-left: 13px;
+}
+
+#ddlStates {
+    padding: 5px;
+    padding-right: 54px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-left: 13px;
+}
+

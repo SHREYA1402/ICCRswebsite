@@ -3,134 +3,273 @@
 
 <head>
     <meta charset="UTF-8">
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: #fcfbfb;
-            padding: 10px;
-            font-family: Arial;
-        }
-
-        /* Center website */
-        .main {
-            max-width: 1000px;
-            margin: auto;
-        }
-
-        h1 {
-            font-size: 50px;
-            word-break: break-all;
-        }
-
-        .row {
-            margin: 8px -16px;
-        }
-
-        /* Add padding BETWEEN each column */
-        .row,
-        .row>.column {
-            padding: 10px;
-        }
-
-        /* Create four equal columns that floats next to each other */
-        .column {
-            float: left;
-            width: 20%;
-        }
-
-        /* Clear floats after rows */
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        /* Content */
-        .content {
-            background-color: white;
-            padding: 10px;
-        }
-
-        /* Responsive layout - makes a two column-layout instead of four columns */
-        @media screen and (max-width: 900px) {
-            .column {
-                width: 70%;
-            }
-        }
-
-        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-        @media screen and (max-width: 400px) {
-            .column {
-                width: 100%;
-            }
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
 </head>
+<style>
+    h1 {
+        text-decoration: underline;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .middle1 {
+        display: grid;
+        width: 75%;
+        margin: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        margin-left: 50px;
+    }
+
+    .middle2 {
+        display: grid;
+        width: 75%;
+        margin: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        margin-left: 50px;
+    }
+
+    .middle3 {
+        display: grid;
+        width: 75%;
+        margin: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        margin-left: 50px;
+    }
+
+    .middle4 {
+        display: grid;
+        width: 75%;
+        margin: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        margin-left: 50px;
+    }
+
+    .middle5 {
+        display: grid;
+        width: 75%;
+        margin: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        margin-left: 50px;
+    }
+
+    .box1 {
+        position: relative;
+    }
+
+    .box1 img {
+        height: 200px;
+        width: 350px;
+        border-radius: 10px;
+    }
+
+    .front h2 {
+        position: absolute;
+        top: 90%;
+        left: 23%;
+        font-size: 20px;
+        text-align: center;
+        color: white;
+    }
+
+    .back h2 {
+        font-size: 30px;
+    }
+
+    .back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(30, 6, 81);
+        color: white;
+        padding: 15px;
+        transform: perspective(600px) rotateY(180deg);
+        transition: transform .5s linear 0s;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        font-size: 15px;
+    }
+
+    .front {
+        transform: perspective(500px)rotateY(0deg);
+        transition: transform .5s linear 0s;
+    }
+
+    .box1:hover>.front {
+        transform: perspective(600px) rotateY(-180deg);
+    }
+
+    .box1:hover>.back {
+        transform: perspective(600px) rotateY(0deg);
+    }
+</style>
 
 <body>
-    <!-- MAIN (Center website) -->
-    <div class="main">
-
+    <header>
         <h1>Photo Gallery</h1>
-
-
-
-
-
-        <!-- Portfolio Gallery Grid -->
-        <div class="row">
-            <div class="column">
-                <div class="content">
-                    <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
-                    <h3>My Work</h3>
-                    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas
-                        oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
-                </div>
+    </header>
+    <div class="middle1">
+        <div class="box1">
+            <div class="front">
+                <img src="Images/IMG-1.jpeg" alt="" width="300px">
             </div>
-            <div class="column">
-                <div class="content">
-                    <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
-                    <h3>My Work</h3>
-                    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas
-                        oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
-                </div>
+            <div class="back">
+                <p>ICCR sponsored a 15 member Punjabi folk group “Bhola Pancchi” led by Shri Parvinder Singh to
+                    Baghdad, Iraq to give performances during Republic Day celebrations Baghdad University, Baghdad
+                    Theatre etc. from 23-30 January 2022. </p>
             </div>
-            <div class="column">
-                <div class="content">
-                    <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
-                    <h3>My Work</h3>
-                    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas
-                        oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
-                </div>
-            </div>
-            <div class="column">
-                <div class="content">
-                    <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
-                    <h3>My Work</h3>
-                    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas
-                        oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
-                </div>
-            </div>
-            <!-- END GRID -->
         </div>
 
-        <div class="content">
-            <img src="/w3images/p3.jpg" alt="Bear" style="width:100%">
-            <h3>Some Other Work</h3>
-            <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat
-                nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
-            <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat
-                nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+        <div class="box1">
+            <div class="front">
+                <img src="Images/IMG-2.jfif" alt="" width="300px">
+            </div>
+            <div class="back">
+                <p>International Film Making Competition </p>
+            </div>
         </div>
 
-        <!-- END MAIN -->
+        <div class="box1">
+            <div class="front">
+                <img src="Images/IMG-3.jpeg" alt="" width="300px" height="10000px">
+            </div>
+            <div class="back">
+                <p>A meeting in the presence of Hon’ble Minister for Civil Aviation, Shri Jyotiraditya Scindia on the
+                    ‘promotion of Indian music in flights operated by Indian air companies’ was hosted by President,
+                    ICCR, Dr. Vinay Sahasrabuddhe at ICCR on 23 December 2021. Eminent musicians like Malini Awasthi,
+                    Anu Malik, Pt Sanjeev Abhyankar, Kaushal S. Inamdar, Pt Shaunak Abhisheki, Manjusha Patil Kulkarni,
+                    Rita Ganguly, Wasifuddin Dagar, Chinmay Pandya joined the meeting. </p>
+            </div>
+        </div>
+    </div>
+    <div class="middle2">
+        <div class="box1">
+            <div class="front">
+                <img src="Images/IMG-4.jpg" alt="" width="300px">
+            </div>
+            <div class="back">
+                <p>Book Release Ceremony "Connecting through Culture- An Overview of India's Soft power Strengths" on
+                    13th July, 2022 at the Sushma Swaraj Bhawan, New Delhi </p>
+            </div>
+        </div>
+
+        <div class="box1">
+            <div class="front">
+                <img src="Images/IMG-5.jpg" alt="" width="300px">
+            </div>
+            <div class="back">
+                <p>DG, ICCR Shri Kumar Tuhin met Dr. Hussain Niyaaz, High Commissioner of the Republic of Maldives to
+                    discuss bilateral cooperation and further strengthen the culturalism between both countries. </p>
+            </div>
+        </div>
+
+        <div class="box1">
+            <div class="front">
+                <img src="Images/IMG-6.jpeg" alt="" width="300px" height="10000px">
+            </div>
+            <div class="back">
+                <p>Visit of Prof Osaghae from NIGERIA</p>
+            </div>
+        </div>
+    </div>
+    <div class="middle3">
+        <div class="box1">
+            <div class="front">
+                <img src="Images/IMG-7.jpg" alt="" width="300px">
+            </div>
+            <div class="back">
+                <p>ICCR sponsored a 15 member Punjabi folk group “Bhola Pancchi” led by Shri Parvinder Singh to
+                    Baghdad, Iraq to give performances during Republic Day celebrations Baghdad University, Baghdad
+                    Theatre etc. from 23-30 January 2022. </p>
+            </div>
+        </div>
+
+        <div class="box1">
+            <div class="front">
+                <img src="Images/IMG-8.jpg" alt="" width="300px">
+            </div>
+            <div class="back">
+                <p>Vocal recital by Smt. Sucharita Gupta, Shri Lalit Kumar on Tabla and Shri Saurabh Srivastava on
+                    Harmonium, Horizon Series programme held on 14th February 2021 </p>
+            </div>
+        </div>
+
+        <div class="box1">
+            <div class="front">
+                <img src="Images/IMG-9.jpeg" alt="" width="300px" height="10000px">
+            </div>
+            <div class="back">
+                <p>Opening remarks by H. E. Shri Sibi George, Ambassador of India, Kuwait </p>
+            </div>
+        </div>
+    </div>
+    <div class="middle4">
+        <div class="box1">
+            <div class="front">
+                <img src="Images/IMG-10.jpg" alt="" width="300px">
+            </div>
+            <div class="back">
+                <p>Hon - 6&7.01.20 - Odissi - 01 </p>
+            </div>
+        </div>
+
+        <div class="box1">
+            <div class="front">
+                <img src="Images/IMG-11.jpg" alt="" width="300px">
+            </div>
+            <div class="back">
+                <p>Percussion group-15.12.2019-02 </p>
+            </div>
+        </div>
+
+        <div class="box1">
+            <div class="front">
+                <img src="Images/IMG-12.jpg" alt="" width="300px" height="10000px">
+            </div>
+            <div class="back">
+                <p>
+                    Mexico -GUADALAJARA - 08-12 </p>
+            </div>
+        </div>
+    </div>
+    <div class="middle5">
+        <div class="box1">
+            <div class="front">
+                <img src="Images/IMG-13.jpeg" alt="" width="300px">
+            </div>
+            <div class="back">
+                <p>Lightening of lamp by Director, ICCR - Hyderabad </p>
+            </div>
+        </div>
+
+        <div class="box1">
+            <div class="front">
+                <img src="Images/IMG-14.jpeg" alt="" width="300px">
+            </div>
+            <div class="back">
+                <p>CPhotographs of Program " A Kathak Recital by Miss. VidyaGuari Adkar "on Sunday, 23rd February 2020
+                    at Shilparamam, Hitech City, Madhapur </p>
+            </div>
+        </div>
+
+        <div class="box1">
+            <div class="front">
+                <img src="Images/IMG-15.jfif" alt="" width="300px" height="10000px">
+            </div>
+            <div class="back">
+                <p>A performance by Rao Kyao Quintet from Portugal on 11 February 2020 at Stein Auditorium, Indian
+                    Habitat Centre, New Delhi easy routes on
+                    their northwest sides. The east face of Kedar Dome is more challenging to climb </p>
+            </div>
+        </div>
     </div>
 </body>
 

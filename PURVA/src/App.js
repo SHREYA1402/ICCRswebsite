@@ -10,13 +10,13 @@ import { Routes, Route, Router }from 'react-router-dom'
 // import { Products }from "./Components/ReactRouter/Products";
 // import FileUpload from "./Upload/FileUpload"
 // import DemoForm from "./Components/DemoForm";
-import ClubEnrollment from "./Components/ClubEnrollment";
+// import ClubEnrollment from "./Components/ClubEnrollment";
 // import { Eventdashboard } from "./Dashbords-event-club/Eventdashboard.js";
 // import { Myprofile } from "./Dashbords-event-club/Myprofile.js";
 // import MYprofileUI from "./Dashbords-event-club/MYprofileUI";
 //  import Registration from "./Components/Registration";
 // import Registration_UI from "./Components/Registration_UI";
-
+import ICCR from "./MiniProject/ICCR/ICCR";
 
  import FrontPage from "./MiniProject/FrontPage";
 //  import President from "./MiniProject/President";
@@ -37,7 +37,8 @@ function App() {
   // </div>
     // <ClubEnrollment/>
   
- <FrontPage/>
+//  <FrontPage/>
+<ICCR/>
   // <President/>
   // <Founder/>
 //  <FileUpload/>

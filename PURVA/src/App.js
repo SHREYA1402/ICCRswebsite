@@ -1,6 +1,9 @@
 // import React from 'react'
+import React , { Component } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Routes, Route, Router }from 'react-router-dom'
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 // import { Home }from "./Components/ReactRouter/Home";
 // import { About }from "./Components/ReactRouter/About";
 // import { Submit } from "./Components/ReactRouter/Submit";
@@ -16,9 +19,15 @@ import { Routes, Route, Router }from 'react-router-dom'
 // import MYprofileUI from "./Dashbords-event-club/MYprofileUI";
 //  import Registration from "./Components/Registration";
 // import Registration_UI from "./Components/Registration_UI";
-import ICCR from "./MiniProject/ICCR/ICCR";
+// import ICCR from "./MiniProject/ICCR";
+// import ContactUs from "./MiniProject/ContactUs";
+//  import FrontPage from "./MiniProject/FrontPage";
+//  import Scholarship from "./MiniProject/Scholarship";
 
- import FrontPage from "./MiniProject/FrontPage";
+//  import Institute from "./MiniProject/Institute/Institute";
+//  import Signin from "./MiniProject/Institute/Signin";
+ import HomePage from "./MiniProject/Institute/HomePage";
+// import Example from "./MiniProject/ICCR/Example";
 //  import President from "./MiniProject/President";
 //  import Founder from "./MiniProject/Founder";
 function App() {
@@ -36,26 +45,32 @@ function App() {
   //   </Router>
   // </div>
     // <ClubEnrollment/>
-  
+    // <ICCR/>
 //  <FrontPage/>
-<ICCR/>
   // <President/>
   // <Founder/>
 //  <FileUpload/>
 //  <DemoForm/>
-
+// <ContactUs/> 
 //  <Registration_UI/>
   //  <MYprofileUI/>
   // <Registration/>
   //  <Eventdashboard/>
-//   <>
-
-//  <Routes>
-//   <Route path='/' element={ <Eventdashboard/>}/>
-//   <Route path='Myprofile' element={<Myprofile/>}/>
   
-//   </Routes>
-//   </>
+// <Scholarship/> 
+  <>
+    {/* <Institute/> */}
+    <HomePage/>
+  {/* <Routes>
+
+   <Route path='/' element={ <FrontPage/>}/>
+     <Route path='contact' element={<ContactUs/>}/>
+     <Route path='scholarship' element={<Scholarship/>}/>
+   <Route path='ICCR' element={<ICCR/>}/>
+  
+   </Routes> */}
+
+   </>
   
   );
 }

@@ -1,0 +1,28 @@
+
+h1{
+    padding-left: 35%;
+}
+.button1 {
+    border: 1px solid;
+    color: rgb(10, 10, 10);
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 6px 4px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    position: relative;
+    
+  }
+
+  .button1:hover {
+    background-color: #0aa4ec;
+    color: white;
+  }
+  .p2{
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  

@@ -1,5 +1,6 @@
+import { useNavigate } from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
-import React from 'react'
+import React from 'react';
 import './dashboard.css';
 import './Firstpage.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -7,6 +8,7 @@ import { faperson } from '@fortawesome/free-solid-svg-icons'
 import { useEffect } from 'react';
 import { useState } from 'react';
 ////////
+
 // import {FiAlignRight,FiXCircle,FiChevronDown } from "react-icons/fi";
 // import {NavLink, Link } from "react-router-dom";
 // import Dropdown from './Dropdown';
@@ -23,7 +25,7 @@ import institute from './institute.png';
 import stud from './stud.png';
 export default function FrontPage () {
 
-
+      const navigate = useNavigate()
 
    function openNav() {
       document.getElementById("mySidenav").style.width = "20%";
@@ -78,18 +80,12 @@ export default function FrontPage () {
             <div className="nav-links">
             
             <NavLink to='/'>Home</NavLink>
-            <div className="dropdown">
-            <button className="about">About us
-            <i class="fa fa-caret-down"></i>
-            </button>
-            <div className="about-content">
-            <NavLink to='/'>The President</NavLink>
-            <NavLink to='/'>The Founder</NavLink>
-            </div>
-            </div>
-            <NavLink to='/'>Scholarship</NavLink>
-            <NavLink to='/'>Gallery</NavLink>
-            <NavLink to='/'>Contact</NavLink>
+              
+            <NavLink to='/'>About Us</NavLink>
+            <NavLink to='/scholarship'>Scholarship</NavLink>
+            <NavLink to='/'>Photo Gallery</NavLink>
+            <NavLink to='/'>Video Gallery</NavLink>
+            <NavLink to='/contact'>Contact</NavLink>
             <NavLink to='/'>Feedback</NavLink>
             </div>
             </div>
@@ -160,7 +156,7 @@ export default function FrontPage () {
          <div id="login"><span>LOGIN AS</span></div>
          <div className="box-container">
             <div className="box">
-               <button className="iccr-head">
+               <button className="iccr-head" onClick={() => navigate('ICCR')}>
                    <img id="img6" src={head} alt="Logo" />
                    <h3>ICCR</h3>
                </button>
@@ -185,7 +181,7 @@ export default function FrontPage () {
             </div>
          </div>
          </div>
-         <section class="footer">
+         <section className="footer">
 
    <div class="box-container">
 

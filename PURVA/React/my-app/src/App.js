@@ -1,6 +1,9 @@
 // import React from 'react'
+import React , { Component } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Routes, Route, Router }from 'react-router-dom'
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 // import { Home }from "./Components/ReactRouter/Home";
 // import { About }from "./Components/ReactRouter/About";
 // import { Submit } from "./Components/ReactRouter/Submit";
@@ -10,15 +13,24 @@ import { Routes, Route, Router }from 'react-router-dom'
 // import { Products }from "./Components/ReactRouter/Products";
 // import FileUpload from "./Upload/FileUpload"
 // import DemoForm from "./Components/DemoForm";
-import ClubEnrollment from "./Components/ClubEnrollment";
+// import ClubEnrollment from "./Components/ClubEnrollment";
 // import { Eventdashboard } from "./Dashbords-event-club/Eventdashboard.js";
 // import { Myprofile } from "./Dashbords-event-club/Myprofile.js";
 // import MYprofileUI from "./Dashbords-event-club/MYprofileUI";
 //  import Registration from "./Components/Registration";
 // import Registration_UI from "./Components/Registration_UI";
-
-
+import ICCR from "./MiniProject/ICCR";
+import ContactUs from "./MiniProject/ContactUs";
  import FrontPage from "./MiniProject/FrontPage";
+ import Scholarship from "./MiniProject/Scholarship";
+ import HomePage from "./MiniProject/Institute/HomePage";
+ import My_Profile from "./MiniProject/Institute/My_Profile";
+ import Institute from "./MiniProject/Institute/Institute";
+//  import SelfDriven from "./MiniProject/Institute/SelfDriven";
+
+//  import Signin from "./MiniProject/Institute/Signin";
+
+// import Example from "./MiniProject/ICCR/Example";
 //  import President from "./MiniProject/President";
 //  import Founder from "./MiniProject/Founder";
 function App() {
@@ -36,25 +48,36 @@ function App() {
   //   </Router>
   // </div>
     // <ClubEnrollment/>
-  
- <FrontPage/>
+    // <ICCR/>
+//  <FrontPage/>
   // <President/>
   // <Founder/>
 //  <FileUpload/>
 //  <DemoForm/>
-
+// <ContactUs/> 
 //  <Registration_UI/>
   //  <MYprofileUI/>
   // <Registration/>
   //  <Eventdashboard/>
-//   <>
-
-//  <Routes>
-//   <Route path='/' element={ <Eventdashboard/>}/>
-//   <Route path='Myprofile' element={<Myprofile/>}/>
   
-//   </Routes>
-//   </>
+// <Scholarship/> 
+  <>
+    {/* <My_Profile/> */}
+    {/* <HomePage/> */}
+  <Routes>
+
+   <Route path='/' element={ <FrontPage/>}/>
+     <Route path='contact' element={<ContactUs/>}/>
+     <Route path='scholarship' element={<Scholarship/>}/>
+   <Route path='ICCR' element={<ICCR/>}/>
+      <Route path='HomePage' element={<HomePage/>}>
+      <Route path='My_Profile' element={<My_Profile/>}/> 
+      <Route path='Institute' element={<Institute/>}/> 
+      </Route>
+ 
+   </Routes>
+
+   </>
   
   );
 }

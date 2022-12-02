@@ -1,7 +1,7 @@
 // import React from 'react'
-import React , { Component } from 'react'
+import React, { Component } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Routes, Route, Router }from 'react-router-dom'
+import { Routes, Route, Router } from 'react-router-dom'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import { Home }from "./Components/ReactRouter/Home";
@@ -26,42 +26,42 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 //  import Institute from "./MiniProject/Institute/Institute";
 //  import Signin from "./MiniProject/Institute/Signin";
- import HomePage from "./MiniProject/Institute/HomePage";
+import HomePage from "./MiniProject/Institute/HomePage";
 // import Example from "./MiniProject/ICCR/Example";
 //  import President from "./MiniProject/President";
 //  import Founder from "./MiniProject/Founder";
 function App() {
   return (
-  //   <div>
-  //   <Router basename="/">
-  //    {/* Add Menu Component */}
-  //     <FrontPage />
-  //     <Switch> 
-        
-  //       <Route path="/Founder" component={Founder}/>
-  //       <Route path="/President" component={President}/>
-        
-  //     </Switch>
-  //   </Router>
-  // </div>
+    //   <div>
+    //   <Router basename="/">
+    //    {/* Add Menu Component */}
+    //     <FrontPage />
+    //     <Switch> 
+
+    //       <Route path="/Founder" component={Founder}/>
+    //       <Route path="/President" component={President}/>
+
+    //     </Switch>
+    //   </Router>
+    // </div>
     // <ClubEnrollment/>
     // <ICCR/>
-//  <FrontPage/>
-  // <President/>
-  // <Founder/>
-//  <FileUpload/>
-//  <DemoForm/>
-// <ContactUs/> 
-//  <Registration_UI/>
-  //  <MYprofileUI/>
-  // <Registration/>
-  //  <Eventdashboard/>
-  
-// <Scholarship/> 
-  <>
-    {/* <Institute/> */}
-    <HomePage/>
-  {/* <Routes>
+    //  <FrontPage/>
+    // <President/>
+    // <Founder/>
+    //  <FileUpload/>
+    //  <DemoForm/>
+    // <ContactUs/> 
+    //  <Registration_UI/>
+    //  <MYprofileUI/>
+    // <Registration/>
+    //  <Eventdashboard/>
+
+    // <Scholarship/> 
+    <>
+      {/* <Institute/> */}
+      <HomePage />
+      {/* <Routes>
 
    <Route path='/' element={ <FrontPage/>}/>
      <Route path='contact' element={<ContactUs/>}/>
@@ -70,8 +70,8 @@ function App() {
   
    </Routes> */}
 
-   </>
-  
+    </>
+
   );
 }
 

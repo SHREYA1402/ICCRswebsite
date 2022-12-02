@@ -1,0 +1,22 @@
+img {
+    max-width: 30%;
+    float: right;
+
+}
+
+/* p {
+    background-color: rgb(255, 255, 255);
+    width: 900px;
+    border: 15px rgb(139, 153, 234);
+    padding: 50px;
+    margin: 20px;
+
+} */
+.box {
+    background-color: rgb(249, 247, 247);
+    width: 1200px;
+    /* border: px rgb(139, 153, 234); */
+    padding: 50px;
+    margin: 20px;
+
+}

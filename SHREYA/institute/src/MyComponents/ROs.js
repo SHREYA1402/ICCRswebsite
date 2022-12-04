@@ -1,8 +1,7 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 const Chartpic = new URL("./images/chart.png", import.meta.url)
-import { DatePicker } from 'react-responsive-datepicker'
-import 'react-responsive-datepicker/dist/index.css'
+
 export const ROs = () => {
     const [isOpen, setIsOpen] = React.useState(false)
     return (
@@ -18,25 +17,9 @@ export const ROs = () => {
                 </p>
             </div>
             <hr />
-            <div>
-                <button
-                    onClick={() => {
-                        setIsOpen(true)
-                    }}
-                >
-                    Open
-                </button>
-                <DatePicker
-                    isOpen={isOpen}
-                    onClose={() => setIsOpen(false)}
-                    defaultValue={new Date(2022, 8, 8)}
-                    minDate={new Date(2022, 10, 10)}
-                    maxDate={new Date(2023, 0, 10)}
-                    headerFormat='DD, MM dd'
-                />
-            </div>
-
+            
         </div>
+        
     )
 }
 

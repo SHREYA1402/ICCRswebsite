@@ -1,0 +1,19 @@
+table{
+    width: 900px;
+    height: 300px;
+    border-collapse: collapse;
+    position: absolute;
+    margin: 0% 0% 2% 5%;
+    
+}
+
+th{
+    border-bottom: 1px solid black;
+    border: 2px solid black;
+    text-align: center;
+}
+
+td{
+    text-align: center;
+    border: 2px solid black;
+}

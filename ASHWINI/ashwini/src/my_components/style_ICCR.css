@@ -1,0 +1,176 @@
+#main {
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+
+img {
+  height: 500px;
+  width: 100%;
+}
+
+.info {
+  width: 1400px;
+  padding: 2% 3% 4% 3%;
+  font-size: 20px;
+  margin-left: 3%;
+  margin-top: 2%;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+  padding-left: 35%;
+}
+
+.news {
+  /* border: 3px solid; */
+  border-color: brown;
+  width: 45%;
+  float: left;
+  margin-left: 1%;
+  padding-left: 2%;
+  height: 440px;
+  background-color: #E9EBF5;
+}
+
+
+.map {
+  
+  border-color: brown;
+  width: 45%;
+  float: right;
+  height: 440px;
+}
+
+
+.button1 {
+  border: 1px solid;
+  color: rgb(10, 10, 10);
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  position: -ms-page;
+  top: 50%;
+  left: 50%;
+  
+}
+
+.button1:hover {
+  background-color: #0aa4ec;
+  color: white;
+}
+
+.container1 {
+  width: 1100px;
+  height: 200px;
+  border: 2px solid royalblue;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-left: 50px;
+  background-color: aquamarine;
+  border-radius: 20%;
+  float: left;
+}
+
+.container2 {
+  width: 1100px;
+  height: 200px;
+  border: 2px solid royalblue;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-left: 50px;
+  background-color: aquamarine;
+  border-radius: 20%;
+  float: right;
+}
+
+.img {
+  width: 150px;
+  height: 150px;
+  clip-path: circle();
+  margin-top: 25px;
+  margin-left: 50px;
+}
+
+.right {
+  padding-left: 150px;
+  display: inline-block;
+  font-size: 25px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.img2 {
+  width: 150px;
+  height: 150px;
+  clip-path: circle();
+  margin-top: 25px;
+  margin-left: 150px;
+}
+
+.left {
+  padding-left: 80px;
+  display: inline-block;
+  font-size: 25px;
+  margin: 0%;
+}
+
+.img3 {
+  width: 150px;
+  height: 150px;
+  clip-path: circle();
+  margin-top: 25px;
+  margin-left: 45px;
+}
+
+.newsItems {
+  overflow: hidden;
+  display: block;
+  height: 330px;
+
+}
+
+.newsItems>div {
+
+  animation: scroll;
+  animation-duration: 20s;
+  transition: all 1s linear;
+
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-1000px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.container{
+  /* border: 3px solid black; */
+  width: 100%;
+  height: 450px;
+}
+
+.t1{
+  background-color: #E9EBF5;
+}
+
+.t2{
+  background-color: #CFD5EA;
+}
+

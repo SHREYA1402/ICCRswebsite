@@ -93,11 +93,101 @@ export const ROs = () => {
                         </div>
 
                         <div className="right-panel box">
-                            <img  className="calendar"src={cal} />
+                            <img className="calendar" src={cal} />
                         </div>
                     </div>
                 </div>
 
+                <br /><br /><div className='table_ICCR'>
+                    <table>
+                        <thead>
+                            <tr className='color'>
+                                <th>Sr.No.</th>
+                                <th>RO</th>
+                                <th>Status</th>
+                                <th>Link</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr className='t1'>
+                                <td>1</td>
+                                <td>Delhi University</td>
+                                <td style={{ fontWeight: 'bold' }}>Approved</td>
+                                <td><button className="button1">View</button></td>
+                            </tr>
+
+                            <tr className='t2'>
+                                <td>2</td>
+                                <td>Ahmedabad</td>
+                                <td style={{ fontWeight: 'bold' }}>Approved</td>
+                                <td><button className="button1">View</button></td>
+                            </tr>
+
+                            <tr className='t1'>
+                                <td>3</td>
+                                <td>Bengaluru</td>
+                                <td style={{ fontWeight: 'bold' }}>Approved</td>
+                                <td><button className="button1">View</button></td>
+                            </tr>
+
+                            <tr className='t2'>
+                                <td>4</td>
+                                <td>Guwahati</td>
+                                <td style={{ fontWeight: 'bold' }}>Approved</td>
+                                <td><button className="button1">View</button></td>
+                            </tr>
+
+                            <tr className='t1'>
+                                <td>5</td>
+                                <td>Jammu</td>
+                                <td style={{ fontWeight: 'bold' }}>Approved</td>
+                                <td><button className="button1">View</button></td>
+                            </tr>
+
+                            <tr className='t2'>
+                                <td>6</td>
+                                <td>Kolkata</td>
+                                <td style={{ fontWeight: 'bold' }}>Approved</td>
+                                <td><button className="button1">View</button></td>
+                            </tr>
+
+                            <tr className='t1'>
+                                <td>7</td>
+                                <td>Lucknow</td>
+                                <td style={{ fontWeight: 'bold' }}>Approved</td>
+                                <td><button className="button1">View</button></td>
+                            </tr>
+
+                            <tr className='t2'>
+                                <td>8</td>
+                                <td>Mumbai</td>
+                                <td style={{ fontWeight: 'bold' }}>Approved</td>
+                                <td><button className="button1">View</button></td>
+                            </tr>
+
+                            <tr className='t1'>
+                                <td>9</td>
+                                <td>Patna</td>
+                                <td style={{ fontWeight: 'bold' }}>Approved</td>
+                                <td><button className="button1">View</button></td>
+                            </tr>
+
+                            <tr className='t2'>
+                                <td>10</td>
+                                <td>Pune</td>
+                                <td style={{ fontWeight: 'bold' }}>Approved</td>
+                                <td><button className="button1">View</button></td>
+                            </tr>
+
+                            <tr className='t1'>
+                                <td>11</td>
+                                <td>Shillong</td>
+                                <td style={{ fontWeight: 'bold' }}>Approved</td>
+                                <td><button className="button1">View</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
 
             </div>

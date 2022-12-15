@@ -110,10 +110,11 @@ export default function ICCR() {
 
                 </div>
 
-                <br /><br /><div className='table_ICCR'>
+                <br /><br />
+                <div className='table_ICCR'>
                     <table>
                         <thead>
-                            <tr style={{backgroundColor: 'royalblue'}}>
+                            <tr style={{backgroundColor: 'rgb(54, 125, 176)'}}>
                                 <th>Sr.No.</th>
                                 <th>RO</th>
                                 <th>Status</th>

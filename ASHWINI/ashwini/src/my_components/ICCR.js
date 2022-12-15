@@ -3,10 +3,10 @@ import './style_ICCR.css';
 import './Table.css';
 import { Link } from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
-import iccr_logo from './my_components/img';
-import aazadi from './my_components/img';
-import chasma from './my_components/img';
-import iccr1 from './my_components/img';
+// import iccr_logo from './my_components/img';
+// import aazadi from './my_components/img';
+// import chasma from './my_components/img';
+// import iccr1 from './my_components/img';
 
 
 
@@ -16,7 +16,7 @@ export default function ICCR() {
         <div>
             <>
 
-            <div className="head">
+             {/* <div className="head">
             <div>
                <img id="img1" src={iccr_logo} alt="" />
                <img id="img2" src={aazadi} alt="Logo" />
@@ -38,7 +38,7 @@ export default function ICCR() {
             <NavLink to='/'>Feedback</NavLink>
             </div>
             </div>
-         </div>
+         </div>  */}
 
 
 
@@ -113,7 +113,7 @@ export default function ICCR() {
                 <br /><br /><div className='table_ICCR'>
                     <table>
                         <thead>
-                            <tr>
+                            <tr style={{backgroundColor: 'royalblue'}}>
                                 <th>Sr.No.</th>
                                 <th>RO</th>
                                 <th>Status</th>
@@ -121,80 +121,80 @@ export default function ICCR() {
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
+                            <tr className='t1'>
                                 <td>1</td>
                                 <td>Delhi University</td>
-                                <td>Approved</td>
+                                <td style={{fontWeight :'bold'}}>Approved</td>
                                 <td><button className="button1">View</button></td>
                             </tr>
 
-                            <tr>
+                            <tr className='t2'>
                                 <td>2</td>
                                 <td>Ahmedabad</td>
-                                <td>Approved</td>
+                                <td style={{fontWeight :'bold'}}>Approved</td>
                                 <td><button className="button1">View</button></td>
                             </tr>
 
-                            <tr>
+                            <tr className='t1'>
                                 <td>3</td>
                                 <td>Bengaluru</td>
-                                <td>Approved</td>
+                                <td style={{fontWeight :'bold'}}>Approved</td>
                                 <td><button className="button1">View</button></td>
                             </tr>
 
-                            <tr>
+                            <tr className='t2'>
                                 <td>4</td>
                                 <td>Guwahati</td>
-                                <td>Approved</td>
+                                <td style={{fontWeight :'bold'}}>Approved</td>
                                 <td><button className="button1">View</button></td>
                             </tr>
 
-                            <tr>
+                            <tr className='t1'>
                                 <td>5</td>
                                 <td>Jammu</td>
-                                <td>Approved</td>
+                                <td style={{fontWeight :'bold'}}>Approved</td>
                                 <td><button className="button1">View</button></td>
                             </tr>
 
-                            <tr>
+                            <tr className='t2'>
                                 <td>6</td>
                                 <td>Kolkata</td>
-                                <td>Approved</td>
+                                <td style={{fontWeight :'bold'}}>Approved</td>
                                 <td><button className="button1">View</button></td>
                             </tr>
 
-                            <tr>
+                            <tr className='t1'>
                                 <td>7</td>
                                 <td>Lucknow</td>
-                                <td>Approved</td>
+                                <td style={{fontWeight :'bold'}}>Approved</td>
                                 <td><button className="button1">View</button></td>
                             </tr>
 
-                            <tr>
+                            <tr className='t2'>
                                 <td>8</td>
                                 <td>Mumbai</td>
-                                <td>Approved</td>
+                                <td style={{fontWeight :'bold'}}>Approved</td>
                                 <td><button className="button1">View</button></td>
                             </tr>
 
-                            <tr>
+                            <tr className='t1'>
                                 <td>9</td>
                                 <td>Patna</td>
-                                <td>Approved</td>
+                                <td style={{fontWeight :'bold'}}>Approved</td>
                                 <td><button className="button1">View</button></td>
                             </tr>
 
-                            <tr>
+                            <tr className='t2'>
                                 <td>10</td>
                                 <td>Pune</td>
-                                <td>Approved</td>
+                                <td style={{fontWeight :'bold'}}>Approved</td>
                                 <td><button className="button1">View</button></td>
                             </tr>
 
-                            <tr>
+                            <tr className='t1'>
                                 <td>11</td>
                                 <td>Shillong</td>
-                                <td>Approved</td>
+                                <td style={{fontWeight :'bold'}}>Approved</td>
                                 <td><button className="button1">View</button></td>
                             </tr>
                         </tbody>

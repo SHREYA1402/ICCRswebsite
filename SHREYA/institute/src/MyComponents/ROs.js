@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
-// import './css.firstpg.css';
+import { NavLink } from 'react-router-dom'
+import './css.firstpg.css';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Chartpic = new URL("./images/chart.png", import.meta.url)
 const logo = new URL("./images/logos.png", import.meta.url)

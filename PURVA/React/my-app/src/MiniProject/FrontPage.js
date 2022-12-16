@@ -23,9 +23,9 @@ import head from './head.png';
 import office from './office.png';
 import institute from './institute.png';
 import stud from './stud.png';
-export default function FrontPage() {
+export default function FrontPage () {
 
-   const navigate = useNavigate()
+      const navigate = useNavigate()
 
    function openNav() {
       document.getElementById("mySidenav").style.width = "20%";
@@ -36,35 +36,35 @@ export default function FrontPage() {
    }
 
 
-   // //////////
-   //    const [isMenu, setisMenu] = useState(false);
-   //    const [isResponsiveclose, setResponsiveclose] = useState(false);
-   //    const toggleClass = () => {
-   //      setisMenu(isMenu === false ? true : false);
-   //      setResponsiveclose(isResponsiveclose === false ? true : false);
-   //  };
-   //    let boxClass = ["main-menu menu-right menuq1"];
-   //    if(isMenu) {
-   //        boxClass.push('menuq2');
-   //    }else{
-   //        boxClass.push('');
-   //    }
-   //    const [isMenuSubMenu, setMenuSubMenu] = useState(false);
-   //    const toggleSubmenu = () => {
-   //      setMenuSubMenu(isMenuSubMenu === false ? true : false);
-   //    };
-   //    let boxClassSubMenu = ["sub__menus"];
-   //    if(isMenuSubMenu) {
-   //        boxClassSubMenu.push('sub__menus__Active');
-   //    }else {
-   //        boxClassSubMenu.push('');
-   //    }
+// //////////
+//    const [isMenu, setisMenu] = useState(false);
+//    const [isResponsiveclose, setResponsiveclose] = useState(false);
+//    const toggleClass = () => {
+//      setisMenu(isMenu === false ? true : false);
+//      setResponsiveclose(isResponsiveclose === false ? true : false);
+//  };
+//    let boxClass = ["main-menu menu-right menuq1"];
+//    if(isMenu) {
+//        boxClass.push('menuq2');
+//    }else{
+//        boxClass.push('');
+//    }
+//    const [isMenuSubMenu, setMenuSubMenu] = useState(false);
+//    const toggleSubmenu = () => {
+//      setMenuSubMenu(isMenuSubMenu === false ? true : false);
+//    };
+//    let boxClassSubMenu = ["sub__menus"];
+//    if(isMenuSubMenu) {
+//        boxClassSubMenu.push('sub__menus__Active');
+//    }else {
+//        boxClassSubMenu.push('');
+//    }
 
-   ///////////
+///////////
 
    return (
       <>
-
+     
          <div className="head">
             <div>
                <img id="img1" src={iccr_logo} alt="" />
@@ -76,27 +76,27 @@ export default function FrontPage() {
             {/* //////////////// */}
 
 
-            <div id="first-1">
-               <div className="nav-links">
-
-                  <NavLink to='/'>Home</NavLink>
-
-                  <NavLink to='/'>About Us</NavLink>
-                  <NavLink to='/scholarship'>Scholarship</NavLink>
-                  <NavLink to='/'>Photo Gallery</NavLink>
-                  <NavLink to='/'>Video Gallery</NavLink>
-                  <NavLink to='/contact'>Contact</NavLink>
-                  <NavLink to='/'>Feedback</NavLink>
-               </div>
+             <div id="first-1">
+            <div className="nav-links">
+            
+            <NavLink to='/'>Home</NavLink>
+              
+            <NavLink to='/'>About Us</NavLink>
+            <NavLink to='/scholarship'>Scholarship</NavLink>
+            <NavLink to='/'>Photo Gallery</NavLink>
+            <NavLink to='/'>Video Gallery</NavLink>
+            <NavLink to='/contact'>Contact</NavLink>
+            <NavLink to='/'>Feedback</NavLink>
+            </div>
             </div>
          </div>
-
+            
 
          {/* /////////////////// */}
-         {/* <div className="header__middle__menus">
+            {/* <div className="header__middle__menus">
                     <nav className="main-nav " >
                     {/* Responsive Menu Button */}
-         {/* {isResponsiveclose === true ? <> 
+                    {/* {isResponsiveclose === true ? <> 
                         <span className="menubar__button" style={{ display: 'none' }} onClick={toggleClass} > <FiXCircle />   </span>
                     </> : <> 
                         <span className="menubar__button" style={{ display: 'none' }} onClick={toggleClass} > <FiAlignRight />   </span>
@@ -116,21 +116,21 @@ export default function FrontPage() {
                     </ul>
                     </nav>     
                 </div>   */}
-         {/* ////////////////////// */}
+            {/* ////////////////////// */}
 
-
-         {/* <select>
+         
+            {/* <select>
   <option value="grapefruit">Grapefruit</option>
   <option value="lime">Lime</option>
   <option selected value="coconut">Coconut</option>
   <option value="mango">Mango</option>
 </select> */}
-         {/* return()
+ {/* return()
  <li key={item.id} className={item.cName}>
                 <Link to={item.path}>{item.title}</Link>
               </li> */}
 
-
+    
 
          <div>
             <nav>
@@ -146,85 +146,78 @@ export default function FrontPage() {
                </div>
             </nav>
             <div>
-
+               
                <img id="img5" src={main_img} alt="Logo" />
             </div>
             {/* <span className='icon' onClick={openNav}>&#9776;</span> */}
-
+             
          </div>
          <div className="enroll">
-            <div id="login"><span>LOGIN AS</span></div>
-            <div className="box-container">
-               <div className="box">
-                  <button className="iccr-head" onClick={() => navigate('ICCR')}>
-                     <img id="img6" src={head} alt="Logo" />
-                     <h3>ICCR</h3>
-                  </button>
-               </div>
-               <div className="box">
-                  <button className="iccr-head">
-                     <img id="img7" src={office} alt="Logo" />
-                     <h3>Regional Office</h3>
-                  </button>
-               </div>
-               <div className="box">
-                  <button className="iccr-head" onClick={() => navigate('HomePage')}>
-                     <img id="img8" src={institute} alt="Logo" />
-                     <h3>Institute</h3>
-                  </button>
-               </div>
-               <div className="box">
-                  <button className="iccr-head">
-                     <img id="img9" src={stud} alt="Logo" />
-                     <h3>Student</h3>
-                  </button>
-               </div>
+         <div id="login"><span>LOGIN AS</span></div>
+         <div className="box-container">
+            <div className="box">
+               <button className="iccr-head" onClick={() => navigate('ICCR')}>
+                   <img id="img6" src={head} alt="Logo" />
+                   <h3>ICCR</h3>
+               </button>
             </div>
+            <div className="box">
+               <button className="iccr-head" onClick={() => navigate('ROs')}>
+                   <img id="img7" src={office} alt="Logo" />
+                   <h3>Regional Office</h3>
+               </button>
+            </div>
+            <div className="box">
+               <button className="iccr-head" onClick={() => navigate('HomePage')}>
+                   <img id="img8" src={institute} alt="Logo" />
+                   <h3>Institute</h3>
+               </button>
+            </div>
+            <div className="box">
+               <button className="iccr-head">
+                   <img id="img9" src={stud} alt="Logo" />
+                   <h3>Student</h3>
+               </button>
+            </div>
+         </div>
          </div>
 
          <section className="footer">
 
-            <div class="box-container">
+   <div class="box-container">
 
-               <div class="box">
-                  <h3>Quick Links</h3>
-                  <a href="home.php"> <i class="fas fa-angle-right"></i> home</a>
-                  <a href="about.php"> <i class="fas fa-angle-right"></i> about</a>
-                  <a href="scholarship.php"> <i class="fas fa-angle-right"></i> scholarship</a>
-                  <a href="feedback.php"> <i class="fas fa-angle-right"></i> feedback</a>
-               </div>
-
-               <div class="box">
-                  <h3>Extra Links</h3>
-                  <a href="#"> <i class="fas fa-angle-right"></i> ask questions</a>
-                  <a href="#"> <i class="fas fa-angle-right"></i> about us</a>
-                  <a href="#"> <i class="fas fa-angle-right"></i> privacy policy</a>
-                  <a href="#"> <i class="fas fa-angle-right"></i> terms of use</a>
-               </div>
-
-               <div class="box">
-                  <h3>Contact Info</h3>
-                  <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
-                  <a href="#"> <i class="fas fa-phone"></i> +91 11 2337 9638 </a>
-                  <a href="#"> <i class="fas fa-envelope"></i> po-egit[at]iccr[dot]gov[dot]in </a>
-                  <a href="#"> <i class="fas fa-map"></i> mumbai, india - 400104 </a>
-               </div>
-
-               <div class="box">
-                  <h3>follow us</h3>
-                  <a href="#"> <FontAwesomeIcon icon="fa-solid fa-person" />facebook </a>
-                  <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
-                  <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
-                  <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
-               </div>
-
-            </div>
+      <div class="box">
+         <h3>Quick Links</h3>
+         <a href="home.php"> <i class="fas fa-angle-right"></i> home</a>
+         <a href="about.php"> <i class="fas fa-angle-right"></i> about</a>
+         <a href="scholarship.php"> <i class="fas fa-angle-right"></i> scholarship</a>
+         <a href="feedback.php"> <i class="fas fa-angle-right"></i> feedback</a>
+      </div>
 
 
+      <div class="box">
+         <h3>Contact Info</h3>
+         <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+         <a href="#"> <i class="fas fa-phone"></i> +91 11 2337 9638 </a>
+         <a href="#"> <i class="fas fa-envelope"></i> po-egit[at]iccr[dot]gov[dot]in </a>
+         <a href="#"> <i class="fas fa-map"></i> mumbai, india - 400104 </a>
+      </div>
 
-         </section>
-         {/* <Dropdown/> */}
-         {/* <div class="embed-container"><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="final map" src="//ashwinimap.maps.arcgis.com/apps/Embed/index.html?webmap=bdc025a917b24f6995ce12124290ed38&extent=71.3872,6.2832,82.8789,12.2118&home=true&zoom=true&previewImage=false&scale=true&search=true&searchextent=true&legend=true&disable_scroll=true&theme=light"></iframe></div> */}
+      <div class="box">
+         <h3>follow us</h3>
+         <a href="#"> <FontAwesomeIcon icon="fa-solid fa-person" />facebook </a>
+         <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+         <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+         <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+      </div>
+
+   </div>
+
+ 
+
+</section>
+{/* <Dropdown/> */}
+        {/* <div class="embed-container"><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="final map" src="//ashwinimap.maps.arcgis.com/apps/Embed/index.html?webmap=bdc025a917b24f6995ce12124290ed38&extent=71.3872,6.2832,82.8789,12.2118&home=true&zoom=true&previewImage=false&scale=true&search=true&searchextent=true&legend=true&disable_scroll=true&theme=light"></iframe></div> */}
       </>
    )
 }

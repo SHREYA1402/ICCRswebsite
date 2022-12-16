@@ -26,7 +26,9 @@ import ContactUs from "./MiniProject/ContactUs";
  import HomePage from "./MiniProject/Institute/HomePage";
  import My_Profile from "./MiniProject/Institute/My_Profile";
  import Institute from "./MiniProject/Institute/Institute";
-//  import SelfDriven from "./MiniProject/Institute/SelfDriven";
+ import RO_Activity from "./MiniProject/Institute/RO_Activity";
+ import SelfDriven from "./MiniProject/Institute/SelfDriven";
+ import ROs from "./MiniProject/RO/ROs";
 
 //  import Signin from "./MiniProject/Institute/Signin";
 
@@ -67,14 +69,17 @@ function App() {
   <Routes>
 
    <Route path='/' element={ <FrontPage/>}/>
-     <Route path='contact' element={<ContactUs/>}/>
-     <Route path='scholarship' element={<Scholarship/>}/>
-   <Route path='ICCR' element={<ICCR/>}/>
-      <Route path='HomePage' element={<HomePage/>}>
+     <Route path='/contact' element={<ContactUs/>}/>
+     <Route path='/scholarship' element={<Scholarship/>}/>
+    <Route path='/ICCR' element={<ICCR/>}/>
+    <Route path='/ROs' element={<ROs/>}/>
+      <Route path='/HomePage/' element={<HomePage/>}>
+      <Route path='institute' element={<Institute/>}/> 
+      <Route path='regional' element={<RO_Activity/>}/> 
+      <Route path='self' element={<SelfDriven/>}/>
       <Route path='My_Profile' element={<My_Profile/>}/> 
-      <Route path='Institute' element={<Institute/>}/> 
       </Route>
- 
+      
    </Routes>
 
    </>

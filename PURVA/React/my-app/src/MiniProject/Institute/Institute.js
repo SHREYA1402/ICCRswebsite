@@ -84,13 +84,13 @@ function closeNav() {
     return (
         <>
          
-
+{/* 
          <div className="logo">
             <img src={Bajaj} alt="img1" />
           </div>
-            <br />
+            <br /> */}
                 {/*................ Hamburger .................*/}
-            <div className="hamburger">
+            {/* <div className="hamburger">
       <section className='mb-3'>
         <MDBNavbar dark bgColor='info'>
           <MDBContainer fluid>
@@ -129,18 +129,19 @@ function closeNav() {
           </div>
         </MDBCollapse>
       </section>
-      </div>
+      </div> */}
             {/*.......... Navbar.......... */}
 
-          <div id="first">
+          {/* <div id="first">
             <div className="nav-links1">
             <NavLink to='/iccr'>Home </NavLink>
             <NavLink to='/iccr'>ICCR'S Activities </NavLink>
             <NavLink to='/regional'>Regional Office's Activities</NavLink>
             <NavLink to='/'>Self-Driven Activities</NavLink>
             </div>
-            </div>
+            </div> */}
             {/*.......... Cards.......... */}
+           
         <div className="container">       
             <Card style={{ width: '18rem' }}>
       <Card.Body>

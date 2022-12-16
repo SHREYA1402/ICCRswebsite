@@ -1,12 +1,14 @@
 import React from 'react'
 import './style_ICCR.css';
 import './Table.css';
+import './Firstpage.css';
 import { Link } from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
-// import iccr_logo from './my_components/img';
-// import aazadi from './my_components/img';
-// import chasma from './my_components/img';
-// import iccr1 from './my_components/img';
+import iccr_logo from './iccr_logo.png';
+import aazadi from './aazadi.png';
+import chasma from './chasma.png';
+import iccr1 from './iccr1.jpg';
+import founder from './founder.jpg';
 
 
 
@@ -16,7 +18,7 @@ export default function ICCR() {
         <div>
             <>
 
-             {/* <div className="head">
+              <div className="head">
             <div>
                <img id="img1" src={iccr_logo} alt="" />
                <img id="img2" src={aazadi} alt="Logo" />
@@ -25,7 +27,7 @@ export default function ICCR() {
             </div>
 
 
-             <div id="first-1">
+              {/* <div id="first-1">
             <div className="nav-links">
             
             <NavLink to='/'>Home</NavLink>
@@ -37,16 +39,17 @@ export default function ICCR() {
             <NavLink to='/contact'>Contact</NavLink>
             <NavLink to='/'>Feedback</NavLink>
             </div>
-            </div>
-         </div>  */}
+            </div>  */}
+         </div>  
 
 
 
                 <div className="info">
-                    <h1>About ICCR</h1><br />
-                    <p>
-                        • The Indian Council for Cultural Relations (ICCR), is an autonomous organisation of the Government of India.<br />
 
+                    <h1>About ICCR</h1><br/>
+                    <p>
+                        • The Indian Council for Cultural Relations (ICCR), is an autonomous organisation of the Government of India. <img id="img" src={founder} alt="Logo" /><br/>
+                        
                         • It was founded on 9 April 1950 by Maulana Abul Kalam Azad.<br />
 
                         • ICCR is involved in India’s external cultural relations or cultural diplomacy, through cultural exchange with other countries and their peoples. It works to strengthen cultural relations and promote mutual understandings.<br />
@@ -61,7 +64,7 @@ export default function ICCR() {
                         ICCR operates through a global network of cultural centres and India’s Diplomatic Missions and Post’s abroad.<br />
                         • Currently, there are 37 Indian Cultural Centres all over the world which work closely with the Indian Embassy and are headed by directors.<br />
                     </p>
-
+                
                 </div><br /><br />
 
                 <div className='container'>

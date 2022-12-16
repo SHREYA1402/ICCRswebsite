@@ -15,17 +15,17 @@ import "./HomePage.css"
 import "./Slide.css"
 import Bajaj from './Bajaj.png'
 import Profile from './Profile.png'
-export default function HomePage() {
+export default function My_Profile() {
 
   const [showAnimated3, setShowAnimated3] = useState(false);
 
   return (
     <>
-     <div className="logo">
+     {/* <div className="logo">
             <img src={Bajaj} alt="img1" />
-          </div>
+          </div> */}
         {/*............. Hamburger.............. */}
-          <div className="hamburger">
+          {/* <div className="hamburger">
       <section className='mb-3'>
         <MDBNavbar dark bgColor='info'>
           <MDBContainer fluid>
@@ -64,9 +64,9 @@ export default function HomePage() {
           </div>
         </MDBCollapse>
       </section>
-      </div>
+      </div> */}
       {/* ........... Navbar ........... */}
-      <div id="first">
+      {/* <div id="first">
             <div className="nav-links">
              <ul>
              <NavLink to='/'>Home </NavLink>
@@ -75,7 +75,7 @@ export default function HomePage() {
             <NavLink to='/'>Self-Driven Activities</NavLink>
             </ul>
             </div>
-            </div>
+            </div> */}
 
     <div className="logo">
             <img src={Profile} alt="img1" />

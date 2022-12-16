@@ -10,7 +10,8 @@ import {
   MDBCarouselItem,
   MDBFooter,
 } from 'mdb-react-ui-kit';
-import { NavLink } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
+import { NavLink, Outlet } from 'react-router-dom'
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./HomePage.css"
@@ -18,7 +19,7 @@ import "./Slide.css"
 import Bajaj from './Bajaj.png'
 import My_activity from './My_activity.png'
 export default function HomePage() {
-
+  const navigate = useNavigate()
   const [showAnimated3, setShowAnimated3] = useState(false);
 
   return (
@@ -51,7 +52,7 @@ export default function HomePage() {
 
         <MDBCollapse show={showAnimated3}>
           <div className='bg-light shadow-3 p-4'>
-            <MDBBtn block className='border-bottom m-0' color='link'>
+            <MDBBtn block className='border-bottom m-0' color='link' onClick={() => navigate('My_Profile')}>
               My Profile
             </MDBBtn>
             <MDBBtn block className='border-bottom m-0' color='link'>
@@ -66,18 +67,21 @@ export default function HomePage() {
           </div>
         </MDBCollapse>
       </section>
+      
       </div>
       {/* ........... Navbar ........... */}
       <div id="first">
             <div className="nav-link1">
              <ul>
              <NavLink to='/'>Home </NavLink>
-            <NavLink to='Institute'>ICCR'S Activities </NavLink>
-            <NavLink to='/regional'>Regional Office's Activities</NavLink>
-            <NavLink to='/'>Self-Driven Activities</NavLink>
+            <NavLink to='institute'>ICCR'S Activities </NavLink>
+            <NavLink to='regional'>Regional Office's Activities</NavLink>
+            <NavLink to='self'>Self-Driven Activities</NavLink>
             </ul>
             </div>
             </div>
+
+            <Outlet />
 {/*............... Image Slider.............. */}
      <MDBCarousel showControls fade>
       <MDBCarouselItem style={{innerHeigh:'23px'}}

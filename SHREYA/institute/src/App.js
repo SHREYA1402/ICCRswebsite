@@ -4,6 +4,7 @@ import Header from "./MyComponents/Header";
 import { Body } from "./MyComponents/Body";
 import { Footer } from "./MyComponents/Footer";
 import { ROs } from "./MyComponents/ROs";
+import { UR } from "./MyComponents/UR";
 import "./css/style.css"
 
 
@@ -15,6 +16,7 @@ function App() {
       <Header />
       <Body />
       <ROs />
+      <UR />
       <Footer />
 
     </>

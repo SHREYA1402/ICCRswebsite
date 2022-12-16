@@ -1,7 +1,6 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
-// import './css.firstpg.css';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {useState,useEffect} from 'react';
 const Chartpic = new URL("./images/chart.png", import.meta.url)
 const logo = new URL("./images/logos.png", import.meta.url)
 const cal = new URL("./images/cal.png", import.meta.url)
@@ -98,8 +97,9 @@ export const ROs = () => {
                     </div>
                 </div>
 
-                <br /><br /><div className='table_ICCR'>
-                    <table>
+                <br /><br />
+                <div className='table_ICCR'>
+                    <table >
                         <thead>
                             <tr className='color'>
                                 <th>Sr.No.</th>
@@ -189,8 +189,45 @@ export const ROs = () => {
                     </table>
                 </div>
 
+                <button className="button2">Upload Report</button>
+                <div className='table_ICCR'>
+                    <table className='tab'>
+                        <thead>
+                            <tr className='color'>
+                                <th>Sr.No.</th>
+                                <th>Events</th>
+                                <th>     </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr className='t1'>
+                                <td>1</td>
+                                <td>Event 1:</td>
+
+                                <td><button className="button1">Upload report</button></td>
+                            </tr>
+
+                            <tr className='t2'>
+                                <td>2</td>
+                                <td>Event 2:</td>
+
+                                <td><button className="button1">Upload report</button></td>
+                            </tr>
+
+                            <tr className='t1'>
+                                <td>3</td>
+                                <td>Event 3:</td>
+
+                                <td><button className="button1">Upload report</button></td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
 
             </div>
+
         </>
     )
 }

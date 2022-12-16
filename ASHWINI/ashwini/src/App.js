@@ -1,9 +1,9 @@
-import logo from './logo.svg';
+
 import './App.css';
 import ICCR from "./my_components/ICCR";
 
 
-import { Routes, Route, Router }from 'react-router-dom'
+// import { Routes, Route, Router }from 'react-router-dom'
 // import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 // import FrontPage from "./my components/FrontPage";

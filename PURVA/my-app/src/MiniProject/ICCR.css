@@ -1,0 +1,148 @@
+
+.info h1{
+    padding-left: 25%;
+}
+.button1_ICCR {
+    border: 1px solid;
+    color: rgb(10, 10, 10);
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    margin-left: -40px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    position: -ms-page;
+    border-radius: 12px;
+    
+  }
+
+  .button1_ICCR:hover {
+    background-color: #0aa4ec;
+    color: white;
+  }
+  .p2{
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  /* #first {
+    margin-top:-13px;
+    width: 100%;
+    padding: 4.4;
+    background-color: rgb(246, 247, 248);
+    color: white;
+    font-size: 14;
+    height: 55px;
+
+} */
+
+nav {
+    margin-top:-32px;
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    nav-up: current;
+}
+
+
+.nav-link1 a {
+    flex: 1;
+    text-align: left;
+    font-size: 25px;
+    color: rgb(32, 23, 23);
+    transition: 0.4s;
+    list-style: none;
+    display: inline-block;
+    padding: 8px 36px;
+    position: relative;
+    text-decoration: none;
+    margin-left: 60px;
+    
+
+}
+
+.nav-link1 ul :hover {
+    color: rgb(28, 31, 31);
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: rgb(217, 214, 214);
+}
+
+.news_ICCR {
+  /* border: 3px solid; */
+  border-color: brown;
+  width: 100%;
+  height: 440px;
+  background-color: #E9EBF5;
+}
+.news_ICCR h1{
+  margin-left: 423px;
+}
+.newsItems_ICCR {
+  overflow: hidden;
+  display: block;
+  height: 330px;
+  font-size: large;
+  margin-left: 845px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.newsItems_ICCR>div {
+
+  animation: scroll;
+  animation-duration: 20s;
+  transition: all 1s linear;
+
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-1000px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.table_ICCR>table {
+  width: 1200px;
+  height: 300px;
+  border-collapse: collapse;
+  position:relative;
+  margin: 0% 4% 3% 2.5%;
+  margin-left: 123px;
+}
+.t1_ICCR th {
+  border-bottom: 1px solid black;
+  border: 2px solid black;
+}
+.t1_ICCR td {
+  text-align: left;
+}
+ .t2_ICCR td {
+  text-align: left;
+}
+.t1_ICCR{
+  background-color: #E9EBF5;
+  
+}
+
+.t2_ICCR{
+  background-color: #CFD5EA;
+ 
+}
+.embed-container_ICCR{
+  margin-top: -419px;
+  height: 400px;
+  padding-left: 29px;
+ 
+}
+

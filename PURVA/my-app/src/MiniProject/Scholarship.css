@@ -1,0 +1,37 @@
+.scholar h1{
+    margin-top: 45px;
+    margin-left: 0%;
+}
+#first {
+  width: 100%;
+  padding-left: 64px;
+  background-color: rgb(10, 93, 125);
+  color: white;
+  font-size: 14;
+  height: 55px;
+
+}
+
+.button1 {
+    border: 1px solid;
+    color: rgb(10, 10, 10);
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 6px 4px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    position: relative;
+    
+  }
+
+  .button1:hover {
+    background-color: #0aa4ec;
+    color: white;
+  } 
+   .p1, .info{
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }

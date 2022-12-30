@@ -1,0 +1,156 @@
+.Details_student{
+    height: 600px;
+    width: 800px;
+    margin: 40px;
+    padding: 20px;
+    font-style: italic;
+    font-weight: 550;
+    float: left;
+}
+
+.photo_student{
+  height: 400px;
+  width: 500px;
+  right: 24px;
+  position: relative;
+}
+
+.h1_student  {
+    font-family: Rubik !important;
+    font-weight: 500;
+    font-size: 30px;
+    color: #012e5b;
+   padding-left: 3%;
+   text-align: center;
+}
+ .h2_student {
+  max-width: 934px;
+  font-weight: 500;
+  font-size: 30px;
+  color: #012e5b;
+  margin-right: 16%;
+ text-align: center; 
+
+}
+
+/* .h11_Student {
+  font-family: Rubik !important;
+  font-weight: 500;
+  font-size: 30px;
+  color: #012e5b;
+ padding-left: 15%;
+ text-align: center;
+ position: relative;
+} */
+
+.line_Student {
+    height: 1px;
+    border-top: 1px solid #2d1d1d;
+    display: block;
+    width: 25%;
+    border-color: #f9a72a;
+    border-top-width: 7px;
+    margin-left: 38%;
+    margin-right: auto;
+}
+
+/* .line1_Student {
+  height: 1px;
+
+  border-top: 1px solid #2d1d1d;
+  display: block;
+  position: relative; 
+   top: 1px;
+  width: 19%;
+  border-color: #f9a72a;
+  border-top-width: 7px;
+  margin-left: 48%;
+  margin-right: auto;
+} */
+
+
+.container1_student{
+    width: 1200px;
+    height: 210px;
+    border: 2px solid rgb(178, 183, 200);
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-left: 50px;
+    background-color: rgb(203, 234, 245);
+    /* border-radius: 20%; */
+    float: left;
+  }
+  .container11_student{
+    margin-top: -20px; 
+  }
+  
+
+  .right_student {
+    /* padding-left: 150px; */
+    display: inline-block;
+    font-size: 22px;
+    width: 800px;
+   margin-top: -14px;
+    padding-top: 45px;
+  }
+
+
+  .container2_student{
+    width: 1200px;
+    height: 210px;
+    border: 2px solid rgb(178, 183, 200);
+    margin: 0 auto;
+    margin-top: 23px;
+    margin-right: 55px;
+    background-color:  rgb(203, 234, 245);
+    /* border-radius: 12%; */
+    float: right;
+  } 
+
+  .left_student {
+    /* padding-left: 80px; */
+    display: inline-block;
+    font-size: 22px;
+    margin: 0%;
+    width: 800px;
+    margin-top: -19px;
+    padding-top: 60px;
+  }
+
+  .img_right_student {
+    width: 250px;
+    height: 150px;
+    clip-path:polygon();
+    margin-top: -10px;
+    margin-left: 80px;
+  }
+
+  .img_left_student {
+    width: 250px;
+    height: 150px;
+    clip-path:polygon();
+    margin-top: 30px;
+    margin-left: 50px;
+  }
+
+  .button_student{
+    border: 1px solid;
+  color: rgb(10, 10, 10);
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  }
+
+  .button_student:hover {
+    background-color: #0aa4ec;
+    color: white;
+  }
+
+  

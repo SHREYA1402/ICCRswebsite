@@ -1,0 +1,92 @@
+input[type="text"],input[type="password"]{
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none; 
+    margin-left:23px; 
+    /* float: right;  */
+    width:14cm;
+
+}
+#psw{
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none; 
+    margin-left:23px; 
+    float: right; 
+    width:15cm;
+}
+
+hr {
+    border: 1px solid #1a1818;
+    margin-bottom: 25px;
+}
+
+.registerbtn {
+    background-color: rgb(134, 134, 245);
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+    opacity: 0.9;
+    margin-left: 28%;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+.signin {
+    background-color: #d9cfcf;
+    text-align: center;
+    padding-bottom: 2cm;  
+
+}
+
+.register-header{
+background-color: white;
+}
+.register-header
+{
+  position: fixed;
+
+}
+span{
+   padding:1.5cm;
+   margin-left:39px;
+   padding-right: 33px;
+   width: 3cm;
+}
+#lname{
+    width: 6cm;
+    margin-left: 8px;
+}
+#oname{
+    width: 6cm;
+}
+
+.container_student{
+    width: 800px;
+    position: relative;
+    margin-left: 22%;
+    border: 1px solid;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+/* .radio_button{
+    /* padding-left: 75%; 
+    font-size: 25px;
+    font-weight: 500px;
+} */
+
+.feedback_student{
+    padding-right: 90px;
+    padding-left: 20%;
+}
+input[type=radio]{
+    /* padding-left: 40%; */
+    margin-left: 3%;
+    font-size: 25px;
+}
